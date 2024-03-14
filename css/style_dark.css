@@ -1,0 +1,173 @@
+:root{
+  --text: #f3e9f6;
+  --background: #0b050d;
+  --primary: #cc9ed8;
+  --secondary: #6f2d34;
+  --accent: #bc7559;
+
+  /*--text: #130916;*/
+  /*--background: #f7f0f9;*/
+  /*--primary: #572762;*/
+  /*--secondary: #d18f95;*/
+  /*--accent: #a76044;*/
+
+/*  Theme comes from https://realtimecolors.com/ and uses Split-Complementary colors
+    (see https://www.realtimecolors.com/?colors=f3e9f6-0b050d-cc9ed8-6f2d34-bc7559&fonts=Noto%20Sans-Noto%20Sans )
+*/
+
+}
+
+body{
+  background-color: var(--background);
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--text);
+  font-size: 20pt;
+}
+
+header a:link{
+  text-decoration: none;
+  color: var(--text);
+}
+
+header a:visited{
+  text-decoration: none;
+  color: var(--text);
+}
+
+header{
+  background-color: var(--secondary);
+  width: 98%;
+  height: auto;
+  margin: 1% 1% 0 1%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+header div{
+  width: auto;
+  height: 115px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+header div a img{
+  width: auto;
+  height: 90%;
+  padding: 5px
+}
+
+nav menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav menu li{
+  padding: 0 10px;
+}
+
+#masthead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+  margin: 1% auto auto;
+  width: 90%;
+  height: 60%;
+  background-color: var(--accent);
+}
+
+#masthead video{
+  height: 60%;
+  width: 60%;
+
+}
+
+#masthead-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+}
+
+
+#masthead-header {
+  position: absolute;
+  border-radius: 35px;
+  height: 60%;
+  width: 80vw;
+  margin:auto auto 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#masthead-header h1{
+  font-size: 4em;
+  font-weight: bold;
+  margin-top:15%;
+  background-color: var(--primary);
+  color: var(--background)
+}
+
+#masthead-header h3{
+  font-size: 2.77em;
+  margin-top: 0;
+  padding-bottom: 1%;
+  background-color: var(--primary);
+  color: var(--background)
+}
+
+main{
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  background-color: color-mix(in hsl, var(--background), var(--text) 10%);
+}
+
+.bento {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+h3 {
+  font-size: 1.33em;
+  font-weight: bolder;
+}
+
+.videoDiv video {
+  width: 30vw;
+  height: auto;
+}
+
+.videoDiv{
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 10px 0;
+}
+
+.bento section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--secondary);
+  padding: 10px;
+  margin: 10px 0px 10px 0;
+  text-align: center;
+}
+
+.bento-left{
+  border-radius: 15px 0 0 15px;
+}
+
+.bento-right{
+  border-radius: 0 15px 15px 0;
+}
+
